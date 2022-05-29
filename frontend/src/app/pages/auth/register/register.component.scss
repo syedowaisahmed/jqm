@@ -1,0 +1,224 @@
+@media(max-width:767px) {
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #673ab7;
+  }
+
+  .jamat-name-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: blue;
+    background-image: linear-gradient(315deg, blue 0%, #233329 74%);
+
+    .logo {
+      width: 100% !important;
+
+      img {
+        width: 20% !important;
+        border-radius: 100% !important;
+        margin-top: 15px !important;
+      }
+    }
+  }
+
+  .form-row {
+    flex-wrap: wrap;
+    direction: column;
+  }
+
+  .form-field {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+h1 {
+  color: antiquewhite;
+  padding-top: 25px;
+}
+
+h2 {
+  color: yellow;
+  font-weight: 400;
+  color: gray;
+}
+
+.jamat-name-logo {
+  display: flex;
+  display: flex;
+  background-color: blue;
+  background-image: linear-gradient(315deg, blue 0%, #233329 74%);
+
+  .logo {
+    width: 10%;
+    text-align: center;
+
+    img {
+      width: 100%;
+      border-radius: 100%;
+      margin: 15px;
+    }
+  }
+
+  .name {
+    width: 90%;
+  }
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #673ab7;
+
+  .message {
+    width: 100%;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Roboto';
+
+    div {
+      width: 100%;
+    }
+  }
+}
+
+.form-row {
+  display: flex;
+  direction: row;
+}
+
+.form-field {
+  margin: 10px;
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.registration-form {
+  margin: 4% 10%;
+  background: inherit;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 lightgray, 0 6px 20px 0 lightgray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.consent {
+  color: red;
+  margin-bottom: 20px;
+  margin-left: 16px;
+  margin-right: 20px;
+}
+
+.acknowledge-consent {
+  margin-bottom: 12px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #673ab7 !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #673ab7 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #673ab7 !important;;
+}
+
+::ng-deep .mat-stepper-next {
+  /*change color of label*/
+  background: #673ab7 !important;
+  color: white;
+ }
+
+ ::ng-deep .mat-stepper-previous {
+  /*change color of label*/
+  background: #673ab7 !important;
+  color: white;
+  margin-right: 5px !important;
+ }
+
+ ::ng-deep .mat-stepper-reset {
+  /*change color of label*/
+  background: indianred !important;
+  color: white;
+ }
+
+ .mat-stepper-register {
+  /*change color of label*/
+  background: green !important;
+  color: white;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #673ab7 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #673ab7 !important;;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0.4em 0px !important;}
+::ng-deep .mat-form-field-label-wrapper { top: -1.5em; }
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    transform: translateY(-1.1em) scale(.75);
+    width: 133.33333%;
+}
+
+.mat-stepper-horizontal {
+  margin-top: 8px;
+}
+
+.mat-form-field {
+  margin-top: 16px;
+}
+
+table {
+  width: 100%;
+}
+
+.separator {
+  margin-bottom: 20px;
+}
+
+.final-disclaimer {
+  color: green;
+}
+
+.final-step {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-header-cell {
+  background: gray;
+  color: white;
+}

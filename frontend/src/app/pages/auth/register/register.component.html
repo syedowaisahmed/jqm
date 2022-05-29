@@ -1,0 +1,250 @@
+<div class="registration-form">
+  <div class="jamat-name-logo">
+    <div class="logo">
+      <img src="/assets/images/logo.jpg" />
+    </div>
+    <div class="name">
+      <h1 media="min-width: 767px">
+        Jamat Qadria Mehmoodia - Satyani Shareef District Sajawal
+      </h1>
+      <h2>(International)</h2>
+    </div>
+  </div>
+  <div class="header">
+    <div class="message">
+      <div>Registration Form</div>
+    </div>
+  </div>
+  <mat-vertical-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="personalInformationGroup">
+      <form [formGroup]="personalInformationGroup">
+        <ng-template matStepLabel>Fill out Personal Information</ng-template>
+        <div class="form-row">
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Your Name</mat-label>
+              <input matInput placeholder="Your Name" formControlName="yourName" required>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Father's Name</mat-label>
+              <input matInput placeholder="Father's Name" formControlName="fatherName" required>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Cast</mat-label>
+              <input matInput placeholder="Cast" formControlName="castName" required>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <mat-form-field appearance="outline">
+              <mat-label>Gender</mat-label>
+              <mat-select placeholder="Gender" required formControlName="gender">
+                <mat-option [value]="'M'">Male</mat-option>
+                <mat-option [value]="'F'">Female</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>NIC Number</mat-label>
+              <input matInput placeholder="NIC Number" formControlName="nicNo" required>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Mobile Number</mat-label>
+              <input matInput placeholder="Mobile Number" formControlName="mobileNo" required>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Email" formControlName="email" required>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Age</mat-label>
+              <input matInput placeholder="Age" formControlName="age" required>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Monther's Tongue</mat-label>
+              <mat-select [value]="'U'" placeholder="Monther's Tongue" required formControlName="gender">
+                <mat-option [value]="'U'">Urdu</mat-option>
+                <mat-option [value]="'S'">Sindhi</mat-option>
+                <mat-option [value]="'S'">English</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="addressGroup">
+      <form [formGroup]="addressGroup">
+        <ng-template matStepLabel>Fill out Address</ng-template>
+        <div class="form-row">
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Province</mat-label>
+              <mat-select placeholder="Province" required formControlName="province">
+                <mat-option [value]="'S'">Sindh</mat-option>
+                <mat-option [value]="'P'">Punjab</mat-option>
+                <mat-option [value]="'K'">Khyber Pakhtonkhuwa</mat-option>
+                <mat-option [value]="'B'">Balochistan</mat-option>
+                <mat-option [value]="'G'">Gilgit Baltistan</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>City</mat-label>
+              <mat-select placeholder="City" required formControlName="city">
+                <mat-option [value]="'U'">Karachi</mat-option>
+                <mat-option [value]="'S'">Lahore</mat-option>
+                <mat-option [value]="'S'">Islamabad</mat-option>
+                <mat-option [value]="'S'">Sajawal</mat-option>
+                <mat-option [value]="'S'">Hyderabad</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>District</mat-label>
+              <mat-select placeholder="District" required formControlName="district">
+                <mat-option [value]="'U'">Dera Ghazi Khan District</mat-option>
+                <mat-option [value]="'S'">Dera Ismail Khan District</mat-option>
+                <mat-option [value]="'S'">Sajawal District</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="form-row">
+          <mat-form-field [style.width.%]="100">
+            <mat-label>Address</mat-label>
+            <textarea matInput name="address" rows="8" placeholder="Address" required></textarea>
+          </mat-form-field>
+        </div>
+        <div class="form-row">
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+          </div>
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="donationInformationGroup">
+      <form [formGroup]="donationInformationGroup">
+        <ng-template matStepLabel>Donation Details (Optional)</ng-template>
+        <div class="form-row">
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Amount</mat-label>
+              <input matInput placeholder="donation" formControlName="donation">
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+            <mat-form-field>
+              <mat-label>Frequency</mat-label>
+              <mat-select placeholder="Frequency" formControlName="frequency">
+                <mat-option [value]="'D'">Daily</mat-option>
+                <mat-option [value]="'W'">Weekly</mat-option>
+                <mat-option [value]="'M'">Monthly</mat-option>
+                <mat-option [value]="'B'">Bi-Yearly</mat-option>
+                <mat-option [value]="'Y'">Yearly</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-field">
+              <mat-checkbox formControlName="autoDeduct" name="autoDeduct">Auto Deduct</mat-checkbox>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </div>
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="accountDetailsGroup">
+      <ng-template matStepLabel>Jamat Accounts Details</ng-template>
+      <div class="form-row separator">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <ng-container matColumnDef="accountType">
+            <th mat-header-cell *matHeaderCellDef>Account Type</th>
+            <td mat-cell *matCellDef="let element"> {{element.accountType}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef>Title </th>
+            <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="number">
+            <th mat-header-cell *matHeaderCellDef>Number</th>
+            <td mat-cell *matCellDef="let element"> {{element.number}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+      <div class="form-row">
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </div>
+
+    </mat-step>
+
+    <mat-step [stepControl]="disclaimerGroup">
+      <form [formGroup]="disclaimerGroup">
+        <ng-template matStepLabel>Donation Consent / Disclaimer</ng-template>
+        <div class="form-row">
+          <div class="consent">
+            <mat-label>By giving your consent below, you hereby agree to always abide by the rules as laid out by the Jamat comittee</mat-label>
+          </div>
+          <div class="acknowledge-consent">
+            <mat-checkbox formControlName="consent" name="consent">I give my consent</mat-checkbox>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </div>
+      </form>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Join Jamat</ng-template>
+      <p class="final-disclaimer">I've read the disclaimer and given my consent. I'm privileged and honoured to be a part of this auspicious Jamat</p>
+      <div class="final-step">
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button class="mat-stepper-reset" (click)="stepper.reset()">Reset</button></div>
+        <div>
+          <button mat-button class="mat-stepper-register">Register</button>
+        </div>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>
