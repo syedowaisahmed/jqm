@@ -1,0 +1,132 @@
+<div class="dashboard-container">
+  <div class="summary">
+    <div class="summary-box">
+      <div class="summary-title">DONATIONS</div>
+      <div class="summary-body">
+        <div class="summary-row">
+          <div>Total Donations</div>
+          <div>250000</div>
+        </div>
+        <div class="summary-row">
+          <div>Max. Donation</div>
+          <div>2500</div>
+        </div>
+        <div class="summary-row">
+          <div>Avg. Donation</div>
+          <div>4000</div>
+        </div>
+        <div class="summary-row">
+          <div>Last Donation</div>
+          <div>1500</div>
+        </div>
+        <div class="summary-row">
+          <div>Auto Deducted</div>
+          <div>100000</div>
+        </div>
+        <div class="summary-row">
+          <div>Manual Donated</div>
+          <div>150000</div>
+        </div>
+      </div>
+      <hr>
+      <app-pie-graph [options]="pieGraphOptions[0]"></app-pie-graph>
+    </div>
+    <div class="summary-box">
+      <div class="summary-title">BOOKS</div>
+      <div class="summary-body">
+        <div class="summary-row">
+          <div>Books Read</div>
+          <div>25</div>
+        </div>
+        <div class="summary-row">
+          <div>Books Unread</div>
+          <div>2</div>
+        </div>
+        <div class="summary-row">
+          <div>Last Book</div>
+          <div>Mahak ul Fuqar</div>
+        </div>
+        <div class="summary-row">
+          <div>Last Read Date</div>
+          <div>26-01-2022</div>
+        </div>
+        <div class="summary-row">
+          <div>New Books</div>
+          <div>50</div>
+        </div>
+        <div class="summary-row">
+          <div>Total Downloads</div>
+          <div>150</div>
+        </div>
+      </div>
+      <hr>
+      <app-pie-graph [options]="pieGraphOptions[1]"></app-pie-graph>
+    </div>
+    <div class="summary-box">
+      <div class="summary-title">VIDEOS</div>
+      <div class="summary-body">
+        <div class="summary-row">
+          <div>Videos Seen</div>
+          <div>25</div>
+        </div>
+        <div class="summary-row">
+          <div>Videos Unseen</div>
+          <div>2</div>
+        </div>
+        <div class="summary-row">
+          <div>Last Video</div>
+          <div>Momin aur Musalman</div>
+        </div>
+        <div class="summary-row">
+          <div>Last Seen Date</div>
+          <div>26-03-2022</div>
+        </div>
+        <div class="summary-row">
+          <div>New Videos</div>
+          <div>30</div>
+        </div>
+        <div class="summary-row">
+          <div>Total Downloads</div>
+          <div>150</div>
+        </div>
+      </div>
+      <hr>
+      <app-pie-graph [options]="pieGraphOptions[2]"></app-pie-graph>
+    </div>
+    <div class="summary-box">
+      <div class="summary-title">EVENTS</div>
+      <div class="summary-body">
+        <div class="summary-row">
+          <div>Attended Events</div>
+          <div>25</div>
+        </div>
+        <div class="summary-row">
+          <div>UnAttended Events</div>
+          <div>12</div>
+        </div>
+        <div class="summary-row">
+          <div>Last Event Attended</div>
+          <div>Satyani Shareef</div>
+        </div>
+        <div class="summary-row">
+          <div>Last Event Date</div>
+          <div>26-03-2022</div>
+        </div>
+        <div class="summary-row">
+          <div>Upcoming Events</div>
+          <div>30</div>
+        </div>
+        <div class="summary-row">
+          <div>Events Held</div>
+          <div>10</div>
+        </div>
+      </div>
+      <hr>
+      <app-pie-graph [options]="pieGraphOptions[3]"></app-pie-graph>
+    </div>
+  </div>
+  <br>
+  <div class="donation-graph">
+    <app-donation-graph></app-donation-graph>
+  </div>
+</div>

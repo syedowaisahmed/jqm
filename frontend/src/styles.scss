@@ -1,11 +1,66 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   //background-image: url("/assets/images/roza-e-anwar.jfif");
   background: gray;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Roboto';
 }
 
 .center-content {
   display: flex;
   align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: 100%;
+    margin-left: 10px;
+  }
+}
+
+/* Material Styles */
+
+.toolbar-color {
+  background: #074a2d;
+}
+
+.background-primary {
+  background: linear-gradient(to right, green 0%, #074a2d 100%);
+}
+
+.mat-icon-size {
+  transform: scale(1.3);
+  color: white;
+  border-radius: 50px;
+}
+
+.mat-vertical-stepper-header .mat-step-icon {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.mat-step-header .mat-step-icon-selected {
+  background-color: #074a2d;
+}
+
+.mat-sidenav-backdrop.mat-sidenav-shown{
+  background-color: none;
+  background: linear-gradient(to right, green 0%, #074a2d 100%) !important;
+}
+
+.mat-drawer-side {
+  border: none
 }

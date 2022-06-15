@@ -1,0 +1,23 @@
+<div class="login-form">
+  <div class="header">
+    <div class="message">
+      <div>Login Form</div>
+    </div>
+  </div>
+  <form [formGroup]="loginGroup">
+    <div class="form-row">
+      <div class="form-field">
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" formControlName="email" required>
+        </mat-form-field>
+      </div>
+      <div class="form-field">
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="password" formControlName="password" required password>
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</div>
